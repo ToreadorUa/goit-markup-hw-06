@@ -51,6 +51,54 @@
 							<use href="./images/sprite.svg#close"></use>
 						</svg>
 					</button>
+					<form class="form-modal">
+						<p class="modal-thitle">Leave your contacts and we will call you back</p>
+						<label class="modal-label-input">
+							<span class="modal-label-name">Name</span>
+							<span class="input-wrapper">
+								<input type="text" name="name" class="modal-input" required minlength="3" />
+								<svg class="modal-input-icon" width="12" height="12">
+									<use href="./images/sprite.svg#name"></use>
+								</svg>
+							</span>
+						</label>
+						<label class="modal-label-input">
+							<span class="modal-label-name">Phone</span>
+							<span class="input-wrapper">
+								<input
+									type="tel"
+									name="phone"
+									class="modal-input"
+									required
+									pattern="380[0-9]{9}"
+									title="380XXXXXXXXX"
+								/>
+								<svg class="modal-input-icon" width="12" height="12">
+									<use href="./images/sprite.svg#phone"></use>
+								</svg>
+							</span>
+						</label>
+						<label class="modal-label-input">
+							<span class="modal-label-name">Email</span>
+
+							<span class="input-wrapper">
+								<input type="email" name="modal-mail" class="modal-input" />
+								<svg class="modal-input-icon" width="12" height="12">
+									<use href="./images/sprite.svg#email"></use>
+								</svg>
+							</span>
+						</label>
+						<label class="modal-label-textarea">
+							<span class="modal-label-name">Comment</span>
+							<textarea name="comment" placeholder="Text input" class="comment-input"></textarea>
+						</label>
+						<input type="checkbox" name="user-policy" id="user-policy" class="checkbox-terms visually-hidden" />
+						<label for="user-policy" class="modal-label-checkbox">
+							I accept the terms and conditions of the&nbsp; <a href="#">Privacy Policy</a>
+						</label>
+
+						<button type="submit" class="modal-button-submit">Send</button>
+					</form>
 				</div>
 			</div>
 			<!-- advantages -->
@@ -362,6 +410,13 @@
 							</a>
 						</li>
 					</ul>
+				</div>
+				<div class="subscribe">
+					<p class="title-third">Subscribe</p>
+					<form class="form-sbscrb">
+						<input type="email" name="subscribe" placeholder="E-mail" class="sbscrb-mail" />
+						<button type="submit" class="btn-subscribe"> Subscribe </button>
+					</form>
 				</div>
 			</div>
 		</footer>
