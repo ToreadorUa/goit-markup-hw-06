@@ -320,6 +320,10 @@ header {
 	line-height: 1.17;
 	letter-spacing: 0.04em;
 }
+.modal-label-checkbox a {
+	color: var(--iris-active-focused);
+	text-decoration: underline;
+}
 .modal-label-checkbox::before {
 	content: "";
 	display: block;
@@ -534,9 +538,13 @@ header {
 .footer-media {
 	margin-left: 120px;
 }
-.footer-items .title-third {
+.titles-footer {
 	color: currentColor;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
 }
+
 .footer-media .social-icons {
 	justify-content: space-between;
 	margin: 16px 0 0 0;
@@ -597,6 +605,7 @@ header {
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 	border-radius: 4px;
+	padding: 8px 16px;
 	background-color: var(--navyblue-shadow);
 	color: var(--white);
 	font-size: 16px;
